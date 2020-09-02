@@ -15,7 +15,7 @@ yarn add gatsby-theme-stitches
 plugin: ['gatsby-theme-stitches']
 ```
 
-That's it! You can import sitiches module from `gatsby-plugin-stitches/src/stitches.config`;
+That's it! You can import stitches module from `gatsby-plugin-stitches/src/stitches.config`;
 
 ```js
 import { styled } from 'gatsby-theme-stitches/src/stitches.config';
