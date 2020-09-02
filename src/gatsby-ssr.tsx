@@ -1,9 +1,10 @@
 import type { ReplaceRendererArgs, RenderBodyArgs } from 'gatsby';
+import type { Option } from '@cometjs/core';
 
 import React from 'react';
 import { setup, requirePluginOptions } from './lib';
 
-let instance: ReturnType<typeof setup>;
+let instance: Option<ReturnType<typeof setup>>;
 
 interface ReplaceRenderer {
   (args: ReplaceRendererArgs, pluginOptions: unknown): any;
@@ -23,8 +24,13 @@ interface OnRenderBody {
 export const onRenderBody: OnRenderBody = ({
   setHeadComponents,
 }) => {
-  const sheet = instance.collect();
+  if (!instance) {
+    return;
+  }
+
   setHeadComponents([
-    <style data-stitches>{sheet}</style>
+    <style data-stitches>
+      {instance.collect()}
+    </style>
   ]);
 };
