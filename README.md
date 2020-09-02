@@ -18,7 +18,7 @@ plugin: ['gatsby-theme-stitches']
 That's it! You can import sitiches module from `gatsby-plugin-stitches/src/stitches.config`;
 
 ```js
-import { styled } from 'gatsby-plugin-stitches/src/stitches.config';
+import { styled } from 'gatsby-theme-stitches/src/stitches.config';
 
 const Container = styled("div", {
   margin: 10,
@@ -26,11 +26,11 @@ const Container = styled("div", {
 });
 ```
 
-And also you can create your own config by shadowing the `gatsby-plugin-stitches/src/stitches.config` module.
+And also you can create your own config by shadowing the `gatsby-theme-stitches/src/stitches.config` module.
 
 ```js
-// src/gatsby-plugin-stitches/stitches.config.js
-// Or src/gatsby-plugin-stitches/stitches.config.ts
+// src/gatsby-theme-stitches/stitches.config.js
+// Or src/gatsby-theme-stitches/stitches.config.ts
 
 import { createStyled } from '@stitches/react';
 
