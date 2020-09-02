@@ -2,7 +2,7 @@ import type { ReplaceRendererArgs, RenderBodyArgs } from 'gatsby';
 import type { Option } from '@cometjs/core';
 
 import React from 'react';
-import { setup, requirePluginOptions } from './lib';
+import { setup } from './lib';
 
 let instance: Option<ReturnType<typeof setup>>;
 
@@ -14,7 +14,6 @@ export const replaceRenderer: ReplaceRenderer = ({
 }, pluginOptions) => {
   instance = setup({
     element: bodyComponent as React.ReactElement,
-    options: requirePluginOptions(pluginOptions),
   })
 };
 

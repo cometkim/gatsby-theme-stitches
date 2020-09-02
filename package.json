@@ -13,10 +13,12 @@
     "url": "git+https://github.com/cometkim/gatsby-theme-stitches.git"
   },
   "scripts": {
+    "dts": "tsc --emitDeclarationOnly --skipLibCheck",
     "build": "babel . --extensions .ts,.tsx --ignore .yarn --out-dir .",
-    "prepack": "yarn build"
+    "prepack": "yarn dts && yarn build"
   },
   "files": [
+    "*.d.ts",
     "src/stitches.config.js",
     "index.js",
     "lib.js",

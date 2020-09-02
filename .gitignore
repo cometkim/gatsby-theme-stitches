@@ -64,4 +64,5 @@ jspm_packages/
 
 # Build artifacts
 *.js
+*.d.ts
 !/index.js
