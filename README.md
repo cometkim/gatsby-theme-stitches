@@ -40,6 +40,26 @@ export const { styled, css } = createStyled({
 });
 ```
 
+## PostCSS plugins
+
+This plugin supports preproccesing by PostCSS plugins
+
+Add plugins to `postCssPlugins` option.
+
+```js
+// in gatsby-config.js
+plugins: [
+  {
+    resolve: 'gatsby-theme-stitches',
+    options: {
+      postCssPlugins: [
+        require('autoprefixer'),
+      ],
+    },
+  },
+]
+```
+
 ## LICENSE
 
 MIT

@@ -1,8 +1,12 @@
-import type { ReplaceRendererArgs, RenderBodyArgs } from 'gatsby';
+import type {
+  ReplaceRendererArgs,
+  RenderBodyArgs,
+  PreRenderHTMLArgs,
+} from 'gatsby';
 import type { Option } from '@cometjs/core';
 
 import React from 'react';
-import { setup } from './lib';
+import { requirePluginOptions, setup } from './lib';
 
 let instance: Option<ReturnType<typeof setup>>;
 
@@ -11,10 +15,13 @@ interface ReplaceRenderer {
 }
 export const replaceRenderer: ReplaceRenderer = ({
   bodyComponent,
-}, pluginOptions) => {
+}, options) => {
+  const { postCssPlugins } = requirePluginOptions(options);
+
   instance = setup({
     element: bodyComponent as React.ReactElement,
-  })
+    postCssPlugins,
+  });
 };
 
 interface OnRenderBody {
@@ -27,9 +34,11 @@ export const onRenderBody: OnRenderBody = ({
     return;
   }
 
+  const sheet = instance.collect();
+
   setHeadComponents([
     <style data-stitches>
-      {instance.collect()}
+      {sheet}
     </style>
   ]);
 };

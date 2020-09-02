@@ -1391,7 +1391,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.3, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4":
   version: 7.11.2
   resolution: "@babel/runtime@npm:7.11.2"
   dependencies:
@@ -7914,6 +7914,7 @@ fsevents@~2.1.2:
     "@babel/cli": ^7.11.5
     "@babel/core": ^7.11.5
     "@babel/plugin-transform-typescript": ^7.11.0
+    "@babel/runtime": ^7.11.2
     "@cometjs/core": ^0.1.0
     "@stitches/react": ^0.0.1
     "@types/node": ^14.6.2
@@ -7922,9 +7923,11 @@ fsevents@~2.1.2:
     "@yarnpkg/pnpify": ^2.2.1
     babel-preset-gatsby-package: ^0.5.2
     gatsby: ^2.24.53
+    postcss: ^7.0.32
     react: ^16.13.1
     react-dom: ^16.13.1
     typescript: ^4.0.2
+    utility-types: ^3.10.0
   peerDependencies:
     "@stitches/react": ^0.0.1
     gatsby: ">=2.0.0"
@@ -16568,6 +16571,13 @@ typescript@^4.0.2:
   version: 0.4.0
   resolution: "utila@npm:0.4.0"
   checksum: 6799b0a5666ac26fb547068e6967e51b534e290174b10ae26e500c216197b0faed9be8a12108bc408ce475ce1002c866aac2d1d4e1453dc72b441d8900f2063a
+  languageName: node
+  linkType: hard
+
+"utility-types@npm:^3.10.0":
+  version: 3.10.0
+  resolution: "utility-types@npm:3.10.0"
+  checksum: 0d2add8ad7057883548a328076dd5eaa8ccb3660df053645fec332253f047fa0882da766dfa676c6a530f6a80023f1f519e1bc3f90088c4fcede303c33de0e4a
   languageName: node
   linkType: hard
 
