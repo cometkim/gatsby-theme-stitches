@@ -1,9 +1,15 @@
 {
   "name": "gatsby-theme-stitches",
   "description": "GatsbyJS plugin for styling with Stitches",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme",
+    "css-in-js"
+  ],
   "author": {
     "name": "Hyeseong Kim",
     "email": "cometkim.kr@gmail.com"
