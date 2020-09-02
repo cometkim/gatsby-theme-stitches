@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-plugin-stitches",
-  "description": "GatsbyJS plugin to styling with Stitches.js",
+  "name": "gatsby-theme-stitches",
+  "description": "GatsbyJS plugin for styling with Stitches",
   "version": "0.0.0-alpha.1",
   "main": "index.js",
   "license": "MIT",
@@ -10,16 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cometkim/gatsby-plugin-stitches.git"
+    "url": "git+https://github.com/cometkim/gatsby-theme-stitches.git"
   },
   "scripts": {
-    "build": "babel -d . src --extensions .ts,.tsx",
+    "build": "babel . --extensions .ts,.tsx --ignore .yarn --out-dir .",
     "prepack": "yarn build"
   },
   "files": [
+    "src/stitches.config.js",
     "index.js",
     "lib.js",
-    "types.js",
     "gatsby-ssr.js",
     "README.md",
     "LICENSE"
@@ -29,6 +29,9 @@
     "gatsby": ">=2.0.0",
     "react": "^16.8.0 || ^17.0.0",
     "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "dependencies": {
+    "@cometjs/core": "^0.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.5",
@@ -44,8 +47,5 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "typescript": "^4.0.2"
-  },
-  "dependencies": {
-    "@cometjs/core": "^0.1.0"
   }
 }

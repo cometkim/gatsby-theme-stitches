@@ -7763,32 +7763,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-stitches@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "gatsby-plugin-stitches@workspace:."
-  dependencies:
-    "@babel/cli": ^7.11.5
-    "@babel/core": ^7.11.5
-    "@babel/plugin-transform-typescript": ^7.11.0
-    "@cometjs/core": ^0.1.0
-    "@stitches/react": ^0.0.1
-    "@types/node": ^14.6.2
-    "@types/react": ^16.9.49
-    "@types/react-dom": ^16.9.8
-    "@yarnpkg/pnpify": ^2.2.1
-    babel-preset-gatsby-package: ^0.5.2
-    gatsby: ^2.24.53
-    react: ^16.13.1
-    react-dom: ^16.13.1
-    typescript: ^4.0.2
-  peerDependencies:
-    "@stitches/react": ^0.0.1
-    gatsby: ">=2.0.0"
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
 "gatsby-plugin-typescript@npm:^2.4.18":
   version: 2.4.18
   resolution: "gatsby-plugin-typescript@npm:2.4.18"
@@ -7932,6 +7906,32 @@ fsevents@~2.1.2:
   checksum: 16930a6be91ed50f425190970ac6ac0435afc40d0b1c9dba7401c1545105336de5ec163d699429d402382a6e4e1c1983aa80d26964599ac4ce6deb0cd24da196
   languageName: node
   linkType: hard
+
+"gatsby-theme-stitches@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "gatsby-theme-stitches@workspace:."
+  dependencies:
+    "@babel/cli": ^7.11.5
+    "@babel/core": ^7.11.5
+    "@babel/plugin-transform-typescript": ^7.11.0
+    "@cometjs/core": ^0.1.0
+    "@stitches/react": ^0.0.1
+    "@types/node": ^14.6.2
+    "@types/react": ^16.9.49
+    "@types/react-dom": ^16.9.8
+    "@yarnpkg/pnpify": ^2.2.1
+    babel-preset-gatsby-package: ^0.5.2
+    gatsby: ^2.24.53
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    typescript: ^4.0.2
+  peerDependencies:
+    "@stitches/react": ^0.0.1
+    gatsby: ">=2.0.0"
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "gatsby@npm:^2.24.53":
   version: 2.24.53
