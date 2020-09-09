@@ -1,11 +1,14 @@
 # gatsby-theme-stitches
 
+![npm](https://img.shields.io/npm/v/gatsby-theme-stitches)
+![GitHub](https://img.shields.io/github/license/cometkim/gatsby-theme-stitches)
+
 A GatsbyJS plugin for styling with [Stitches](https://stitches.dev/)
 
 ## Install
 
 ```bash
-yarn add gatsby-theme-stitches
+yarn add gatsby-theme-stitches @stitches/react
 ```
 
 ## Usage
