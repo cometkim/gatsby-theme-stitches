@@ -9,7 +9,10 @@ interface Setup {
   (props: {
     element: React.ReactElement,
   }): {
-    collect: () => string,
+    collect: () => {
+      styles: string[],
+      bodyHTML: string,
+    },
   }
 }
 export const setup: Setup = ({
@@ -18,12 +21,9 @@ export const setup: Setup = ({
   renderBody = () => renderToString(element);
 
   const collect = () => {
-    const { styles } = css.getStyles(renderBody);
-    const sheet = styles.join();
-    return sheet;
+    const { styles, result: bodyHTML } = css.getStyles(renderBody);
+    return { styles, bodyHTML };
   };
 
-  return {
-    collect,
-  };
+  return { collect };
 }

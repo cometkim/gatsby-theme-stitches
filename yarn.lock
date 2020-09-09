@@ -1446,15 +1446,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cometjs/core@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@cometjs/core@npm:0.1.0"
-  dependencies:
-    core-js: ^3.6.4
-  checksum: b160323ebd4ac922e98d824af8895f4f4c0afeb04e5c2c70c560bcb94f9ce389fd356d6eb1c98c2002a9717f1e7e2dff627559b66b07e6f6b9809c9724a5b194
-  languageName: node
-  linkType: hard
-
 "@emotion/cache@npm:^10.0.27":
   version: 10.0.29
   resolution: "@emotion/cache@npm:10.0.29"
@@ -5198,7 +5189,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.6.4, core-js@npm:^3.6.5":
+"core-js@npm:^3.6.5":
   version: 3.6.5
   resolution: "core-js@npm:3.6.5"
   checksum: 9283348dd5be2f1d07feaf90e2336b3f00a2316e3d3c6d4f789c9a67bdd4d7b08ce1c88dca4e591340130056c6b412b0b74fae039f8e259206f1073f542e4e85
@@ -7914,7 +7905,6 @@ fsevents@~2.1.2:
     "@babel/cli": ^7.11.5
     "@babel/core": ^7.11.5
     "@babel/plugin-transform-typescript": ^7.11.0
-    "@cometjs/core": ^0.1.0
     "@stitches/react": ^0.0.1
     "@types/node": ^14.6.2
     "@types/react": ^16.9.49

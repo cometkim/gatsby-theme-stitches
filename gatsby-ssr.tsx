@@ -1,35 +1,27 @@
-import type { ReplaceRendererArgs, RenderBodyArgs } from 'gatsby';
-import type { Option } from '@cometjs/core';
+import type { ReplaceRendererArgs } from 'gatsby';
 
 import React from 'react';
 import { setup } from './lib';
-
-let instance: Option<ReturnType<typeof setup>>;
 
 interface ReplaceRenderer {
   (args: ReplaceRendererArgs, pluginOptions: unknown): any;
 }
 export const replaceRenderer: ReplaceRenderer = ({
   bodyComponent,
-}, pluginOptions) => {
-  instance = setup({
-    element: bodyComponent as React.ReactElement,
-  })
-};
-
-interface OnRenderBody {
-  (args: RenderBodyArgs, pluginOptions: unknown): any;
-}
-export const onRenderBody: OnRenderBody = ({
   setHeadComponents,
+  replaceBodyHTMLString,
 }) => {
-  if (!instance) {
-    return;
-  }
+  const instance = setup({
+    element: bodyComponent as React.ReactElement,
+  });
 
-  setHeadComponents([
-    <style data-stitches>
-      {instance.collect()}
-    </style>
-  ]);
+  const { styles, bodyHTML } = instance.collect();
+
+  setHeadComponents(
+    styles.map((sheet, i) =>
+      <style key={i} data-stitches dangerouslySetInnerHTML={{ __html: sheet }} />
+    )
+  );
+
+  replaceBodyHTMLString(bodyHTML);
 };
