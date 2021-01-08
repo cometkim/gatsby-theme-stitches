@@ -43,6 +43,19 @@ export const { styled, css } = createStyled({
 });
 ```
 
+### TypeScript
+
+Add a module resolution to your `tsconfig.json` file to get autocompletion.
+
+```json
+{
+  "baseUrl": ".",
+  "paths": {
+    "gatsby-theme-stitches/src/*": ["./src/gatsby-theme-stitches/*"]
+  }
+}
+```
+
 ## LICENSE
 
 MIT
