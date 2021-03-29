@@ -9,6 +9,7 @@ export const onRenderBody = ({
   setHeadComponents([
     <style
       id="stitches"
+      key="stitches"
       dangerouslySetInnerHTML={{ __html: getCssString() }}
     />,
   ]);
