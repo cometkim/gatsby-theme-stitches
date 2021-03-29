@@ -3,7 +3,7 @@
 
 __metadata:
   version: 4
-  cacheKey: 6
+  cacheKey: 7
 
 "@arcanis/slice-ansi@npm:^1.0.2":
   version: 1.0.2
@@ -372,6 +372,13 @@ __metadata:
   version: 7.10.4
   resolution: "@babel/helper-validator-identifier@npm:7.10.4"
   checksum: 25098ef842e3ffecdd9a7216f6173da7ad7be1b0b3e454a9f6965055154b9ad7a4acd2f218ba3d2efc0821bdab97837b3cb815844af7d72f66f89d446a54efc6
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-identifier@npm:^7.12.11":
+  version: 7.12.11
+  resolution: "@babel/helper-validator-identifier@npm:7.12.11"
+  checksum: 18de432203264b501db2690b53370a4289dc56084f5a2c66de624b159ee28b8abaeb402b2b7584296d9261645d91ddb6bfd21125d3ffd9bf02e9262e77baf3d2
   languageName: node
   linkType: hard
 
@@ -1446,6 +1453,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/types@npm:^7.8.3":
+  version: 7.13.14
+  resolution: "@babel/types@npm:7.13.14"
+  dependencies:
+    "@babel/helper-validator-identifier": ^7.12.11
+    lodash: ^4.17.19
+    to-fast-properties: ^2.0.0
+  checksum: 0dda1e774076c763ad38d77a2292524556be0629f5b7a2078bddb40ae4a2fd059d10197029a988926dc314f7519e17daa8a714656e0faa207f2bb5339b57410c
+  languageName: node
+  linkType: hard
+
 "@emotion/cache@npm:^10.0.27":
   version: 10.0.29
   resolution: "@emotion/cache@npm:10.0.29"
@@ -2054,26 +2072,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/core@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@stitches/core@npm:0.0.1"
-  dependencies:
-    "@types/node": ^13.11.1
-    tslib: ^1.11.1
-  checksum: 87c39e78b1e5db26d49ea9903c102456b89b8110822783647487c9c041a101c56e26e415ccaf53bac2d331fbf8640c88880deb93dfe5e4c4eb19666e21205fd9
+"@stitches/core@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "@stitches/core@npm:0.1.4"
+  checksum: a477ec38e26f8123de346db0c083c9db5927ba3ccec21108a10cca8d8c9acf49b25c56ddff2635d796c190e311169bf3630b8530ff49a96225345d5e9e666a67
   languageName: node
   linkType: hard
 
-"@stitches/react@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@stitches/react@npm:0.0.1"
+"@stitches/react@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "@stitches/react@npm:0.1.4"
   dependencies:
-    "@stitches/core": ^0.0.1
-    "@types/node": ^13.11.1
-    tslib: ^1.11.1
+    "@stitches/core": ^0.1.4
   peerDependencies:
-    react: ^16.13.1
-  checksum: b34accf9c9847be61f42033b76f5e76f34cf92cfc40d13aea51fcdd9a73bf57b75883b003ac2254c8a391ca15da4fe75e5b61ed9b3d2604832b8c7c1ee7060a5
+    react: ">=17.0.0 <19.0.0"
+  checksum: b16e7e148d92bb1a732089621520f2c2f09697e309634e1ba1472f3394434461772a2d54d3a3d7c2d9379bd510fe9b091291766402b46b84a30ad0c1c1ce8aca
   languageName: node
   linkType: hard
 
@@ -2348,7 +2361,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^13.11.1, @types/node@npm:^13.7.0":
+"@types/node@npm:^13.7.0":
   version: 13.13.15
   resolution: "@types/node@npm:13.13.15"
   checksum: 767eefa7024d560b663b2c9ccd0ce0408ba45e7ce75f8010e8f7954ed14eb9fdf97f7ee4392183a4177dcca99fce088706c43b9bbc5d3adac194fa52a9c3f73f
@@ -7543,20 +7556,20 @@ fsevents@^1.2.7:
 
 "fsevents@patch:fsevents@^1.2.7#builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#builtin<compat/fsevents>::version=1.2.13&hash=87eb42"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#builtin<compat/fsevents>::version=1.2.13&hash=11e9ea"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
-  checksum: 31c62373556f061f4b4c52ff61c91bc9080243ea074a38a81cf12c1f2c9098da731ea3d39705c805b738427e4284af6b8151efe65ce9ca6b11378d43f36db2c4
+  checksum: 7bc048c164eb72f91b18ba7cd2ba30679a0afe57e9cd6352eac4bdbc4ddd4ca2ea98674d0bd3a80e96427469adc433c13532494b36aea40fceab36e198982182
   languageName: node
   linkType: hard
 
 "fsevents@patch:fsevents@~2.1.2#builtin<compat/fsevents>":
   version: 2.1.3
-  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#builtin<compat/fsevents>::version=2.1.3&hash=87eb42"
+  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#builtin<compat/fsevents>::version=2.1.3&hash=11e9ea"
   dependencies:
     node-gyp: latest
-  checksum: d8ae862048fc127cdbd00d02b2feb7c25946c3ce4cbc44e958134be87e239577a16dafafa1c270d010b8624e1b1e0372e23f7865c55c6f83e83fc9f68b0a30d2
+  checksum: e2b8c379340e21a786d32c653854c8876f94eb1202dd5be378fd42c062bc123aab5051c32bf0011865257c85982c41ded203f9fe8c9f9c8f8c84dc4672abc0e0
   languageName: node
   linkType: hard
 
@@ -7905,7 +7918,7 @@ fsevents@~2.1.2:
     "@babel/cli": ^7.11.5
     "@babel/core": ^7.11.5
     "@babel/plugin-transform-typescript": ^7.11.0
-    "@stitches/react": ^0.0.1
+    "@stitches/react": ^0.1.4
     "@types/node": ^14.6.2
     "@types/react": ^16.9.49
     "@types/react-dom": ^16.9.8
@@ -7914,9 +7927,9 @@ fsevents@~2.1.2:
     gatsby: ^2.24.53
     react: ^16.13.1
     react-dom: ^16.13.1
-    typescript: ^4.0.2
+    typescript: ^4.2.3
   peerDependencies:
-    "@stitches/react": ^0.0.1
+    "@stitches/react": ^0.1.0
     gatsby: ">=2.0.0"
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
@@ -15956,7 +15969,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.0.0, tslib@npm:^1.10.0, tslib@npm:^1.11.1, tslib@npm:^1.11.2, tslib@npm:^1.13.0, tslib@npm:^1.8.1, tslib@npm:^1.9.0, tslib@npm:^1.9.3":
+"tslib@npm:^1.0.0, tslib@npm:^1.10.0, tslib@npm:^1.11.2, tslib@npm:^1.13.0, tslib@npm:^1.8.1, tslib@npm:^1.9.0, tslib@npm:^1.9.3":
   version: 1.13.0
   resolution: "tslib@npm:1.13.0"
   checksum: 5dc3bdaea3b67c76ef4a14c28fcb2171da7bcf292fd9c59a260098729626b1ce766c52b588f08e324ed9a0c52ea8a93a815920f980d75981abc9d850fbf310fb
@@ -16081,23 +16094,23 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-typescript@^4.0.2:
-  version: 4.0.2
-  resolution: "typescript@npm:4.0.2"
+typescript@^4.2.3:
+  version: 4.2.3
+  resolution: "typescript@npm:4.2.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: cc0e7806eee7997a1b4b2990badacc4a8d089893ed0a377f35c9658e2ac392503cb340d0187203ed82e36e427dda94b0fb7107e44a71cca99efac86be26e16ee
+  checksum: 06e8470f317db6f5e2fce809b20eb84a67a7d8179057abff36e5427bd1b891bd08e54581ff81f0fa36aef9b6d1eb0f54eaf6e2643c6dbd4e37a0adcc41eed256
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.0.2#builtin<compat/typescript>":
-  version: 4.0.2
-  resolution: "typescript@patch:typescript@npm%3A4.0.2#builtin<compat/typescript>::version=4.0.2&hash=5b02a2"
+"typescript@patch:typescript@^4.2.3#builtin<compat/typescript>":
+  version: 4.2.3
+  resolution: "typescript@patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b8b689ef994cce4fe59950d56ddfffce3c4bdda8edb85b72e752d4a6d27bf7df8a318e76ccde25cbe6e642058f2f4ccf47187db4b243bbc98278a2844db9461b
+  checksum: a8956044aabf730699bcc3c2475efdd3f35e509329325cf60b4989761d4c2188e2c474183e2cf92b8c201fcf976814a5a16f144508b2a832643c4f972d0ab803
   languageName: node
   linkType: hard
 

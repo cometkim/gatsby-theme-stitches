@@ -1,27 +1,15 @@
-import type { ReplaceRendererArgs } from 'gatsby';
+import type { RenderBodyArgs } from 'gatsby';
 
-import React from 'react';
-import { setup } from './lib';
+import * as React from 'react';
+import { getCssString } from './src/stitches.config';
 
-interface ReplaceRenderer {
-  (args: ReplaceRendererArgs, pluginOptions: unknown): any;
-}
-export const replaceRenderer: ReplaceRenderer = ({
-  bodyComponent,
+export const onRenderBody = ({
   setHeadComponents,
-  replaceBodyHTMLString,
-}) => {
-  const instance = setup({
-    element: bodyComponent as React.ReactElement,
-  });
-
-  const { styles, bodyHTML } = instance.collect();
-
-  setHeadComponents(
-    styles.map((sheet, i) =>
-      <style key={i} data-stitches dangerouslySetInnerHTML={{ __html: sheet }} />
-    )
-  );
-
-  replaceBodyHTMLString(bodyHTML);
+}: RenderBodyArgs) => {
+  setHeadComponents([
+    <style
+      id="stitches"
+      dangerouslySetInnerHTML={{ __html: getCssString() }}
+    />,
+  ]);
 };

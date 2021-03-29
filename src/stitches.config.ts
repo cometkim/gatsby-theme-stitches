@@ -1,9 +1,28 @@
-import { createStyled } from '@stitches/react';
+import { createCss } from '@stitches/react';
 
-// GatsbyJS site can shadows it to own config
-export const { styled, css } = createStyled({
+/**
+ * You can override this config by component shadowing
+ * See https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/
+ *
+ * You should export all those three properties `styled`, `css` and `getCssString`.
+ */
+export const { styled, css, getCssString } = createCss({
   prefix: '',
-  tokens: {},
-  breakpoints: {},
+  theme: {
+    colors: {},
+    space: {},
+    fonts: {},
+    fontWeights: {},
+    lineHeights: {},
+    letterSpacings: {},
+    sizes: {},
+    borderWidths: {},
+    borderStyles: {},
+    radii: {},
+    shadows: {},
+    zIndices: {},
+    transitions: {},
+  },
   utils: {},
+  media: {},
 });
