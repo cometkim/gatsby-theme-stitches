@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-stitches",
   "description": "GatsbyJS plugin for styling with Stitches",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
