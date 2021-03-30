@@ -32,13 +32,12 @@ const Container = styled("div", {
 And also you can create your own config by shadowing the `gatsby-theme-stitches/src/stitches.config` module.
 
 ```js
-// src/gatsby-theme-stitches/stitches.config.js
-// Or src/gatsby-theme-stitches/stitches.config.ts
+// src/gatsby-theme-stitches/stitches.config.ts
 
 import { createStyled } from '@stitches/react';
 
-// You should exports `css`
-export const { styled, css } = createStyled({
+// You should exports `styled`, `css` and `getCssString`
+export const { styled, css, getCssString } = createCss({
   // See the [configuration guide](https://stitches.dev/docs/tokens)
 });
 ```
