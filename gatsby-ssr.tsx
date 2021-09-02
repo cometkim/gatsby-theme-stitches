@@ -1,7 +1,7 @@
 import type { RenderBodyArgs } from 'gatsby';
 
 import * as React from 'react';
-import { getCssText } from './src/stitches.config';
+import { getCssText } from './src/config';
 
 export const onRenderBody = ({
   setHeadComponents,

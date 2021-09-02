@@ -18,10 +18,10 @@ yarn add gatsby-theme-stitches @stitches/react
 plugin: ['gatsby-theme-stitches']
 ```
 
-That's it! You can import sitiches module from `gatsby-plugin-stitches/src/stitches.config`;
+That's it! You can import sitiches module from `gatsby-plugin-stitches/src/config`;
 
 ```js
-import { styled } from 'gatsby-theme-stitches/src/stitches.config';
+import { styled } from 'gatsby-theme-stitches/src/config';
 
 const Container = styled("div", {
   margin: 10,
@@ -29,15 +29,24 @@ const Container = styled("div", {
 });
 ```
 
-And also you can create your own config by shadowing the `gatsby-theme-stitches/src/stitches.config` module.
+And also you can create your own config by shadowing the `gatsby-theme-stitches/src/config` module.
 
 ```js
-// src/gatsby-theme-stitches/stitches.config.ts
+// src/gatsby-theme-stitches/config.ts
 
-import { createStyled } from '@stitches/react';
+import { createStitches } from '@stitches/react';
 
-// You should exports `styled`, `css` and `getCssString`
-export const { styled, css, getCssString } = createCss({
+// You should exports all properties
+export const {
+  styled,
+  css,
+  globalCss,
+  keyframes,
+  getCssText,
+  theme,
+  createTheme,
+  config,
+} = createStitches({
   // See the [configuration guide](https://stitches.dev/docs/tokens)
 });
 ```
