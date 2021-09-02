@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/cli", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:7.13.16"],
             ["@babel/core", "npm:7.13.16"],
             ["@babel/plugin-transform-typescript", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:7.13.0"],
-            ["@stitches/react", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:0.1.4"],
+            ["@stitches/react", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:1.0.0"],
             ["@types/node", "npm:14.14.37"],
             ["@types/react", "npm:16.9.49"],
             ["@yarnpkg/pnpify", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:2.4.0"],
@@ -3241,28 +3241,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["@stitches/core", [
-        ["npm:0.1.4", {
-          "packageLocation": "./.yarn/cache/@stitches-core-npm-0.1.4-d4db761d4b-a477ec38e2.zip/node_modules/@stitches/core/",
-          "packageDependencies": [
-            ["@stitches/core", "npm:0.1.4"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["@stitches/react", [
-        ["npm:0.1.4", {
-          "packageLocation": "./.yarn/cache/@stitches-react-npm-0.1.4-c02e8dc8b0-b16e7e148d.zip/node_modules/@stitches/react/",
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@stitches-react-npm-1.0.0-6606fc81e9-ea8ad875ed.zip/node_modules/@stitches/react/",
           "packageDependencies": [
-            ["@stitches/react", "npm:0.1.4"]
+            ["@stitches/react", "npm:1.0.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:0.1.4", {
-          "packageLocation": "./.yarn/$$virtual/@stitches-react-virtual-99cf792529/0/cache/@stitches-react-npm-0.1.4-c02e8dc8b0-b16e7e148d.zip/node_modules/@stitches/react/",
+        ["virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:1.0.0", {
+          "packageLocation": "./.yarn/$$virtual/@stitches-react-virtual-58a4f3d044/0/cache/@stitches-react-npm-1.0.0-6606fc81e9-ea8ad875ed.zip/node_modules/@stitches/react/",
           "packageDependencies": [
-            ["@stitches/react", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:0.1.4"],
-            ["@stitches/core", "npm:0.1.4"],
+            ["@stitches/react", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:1.0.0"],
             ["@types/react", "npm:16.9.49"],
             ["react", "npm:17.0.2"]
           ],
@@ -9640,7 +9630,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/cli", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:7.13.16"],
             ["@babel/core", "npm:7.13.16"],
             ["@babel/plugin-transform-typescript", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:7.13.0"],
-            ["@stitches/react", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:0.1.4"],
+            ["@stitches/react", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:1.0.0"],
             ["@types/node", "npm:14.14.37"],
             ["@types/react", "npm:16.9.49"],
             ["@yarnpkg/pnpify", "virtual:d6e3a51185e8bb5ce60ac61e8e4b5adda995cb1c7d7476567b0df84590800f26ac8de803c4b4a199be2889828d808a4e0402a8db6df86adf4872790489c27238#npm:2.4.0"],

@@ -1,7 +1,7 @@
 import type { RenderBodyArgs } from 'gatsby';
 
 import * as React from 'react';
-import { getCssString } from './src/stitches.config';
+import { getCssText } from './src/stitches.config';
 
 export const onRenderBody = ({
   setHeadComponents,
@@ -10,7 +10,7 @@ export const onRenderBody = ({
     <style
       id="stitches"
       key="stitches"
-      dangerouslySetInnerHTML={{ __html: getCssString() }}
+      dangerouslySetInnerHTML={{ __html: getCssText() }}
     />,
   ]);
 };
