@@ -25,9 +25,7 @@
   "files": [
     "gatsby-ssr.js",
     "src/stitches.config.ts",
-    "index.js",
-    "README.md",
-    "LICENSE"
+    "index.js"
   ],
   "peerDependencies": {
     "@stitches/react": "^1.0.0",
