@@ -1949,21 +1949,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/core@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@stitches/core@npm:0.1.4"
-  checksum: a477ec38e26f8123de346db0c083c9db5927ba3ccec21108a10cca8d8c9acf49b25c56ddff2635d796c190e311169bf3630b8530ff49a96225345d5e9e666a67
-  languageName: node
-  linkType: hard
-
-"@stitches/react@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@stitches/react@npm:0.1.4"
-  dependencies:
-    "@stitches/core": ^0.1.4
+"@stitches/react@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@stitches/react@npm:1.0.0"
   peerDependencies:
-    react: ">=17.0.0 <19.0.0"
-  checksum: b16e7e148d92bb1a732089621520f2c2f09697e309634e1ba1472f3394434461772a2d54d3a3d7c2d9379bd510fe9b091291766402b46b84a30ad0c1c1ce8aca
+    react: ">= 16.3.0"
+  checksum: ea8ad875ed31701268b5dda77432f891d4aae8ccd2cedd46a4a99754729ffa460c4a6177345fc4815b884ab4be0a10f5c11765d28480f073759e96c5f702c957
   languageName: node
   linkType: hard
 
@@ -7124,7 +7115,7 @@ fsevents@~2.3.1:
     "@babel/cli": ^7.13.16
     "@babel/core": ^7.13.16
     "@babel/plugin-transform-typescript": ^7.13.0
-    "@stitches/react": ^0.1.4
+    "@stitches/react": ^1.0.0
     "@types/node": ^14.6.2
     "@types/react": ^16.9.49
     "@yarnpkg/pnpify": ^2.4.0
@@ -7133,7 +7124,7 @@ fsevents@~2.3.1:
     react: ^17.0.2
     typescript: ^4.2.3
   peerDependencies:
-    "@stitches/react": ^0.1.0
+    "@stitches/react": ^1.0.0
     gatsby: ">=2.0.0"
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   languageName: unknown
