@@ -3288,10 +3288,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.9":
-  version: 18.16.12
-  resolution: "@types/node@npm:18.16.12"
-  checksum: 90b316c097a059534870bc8e358c7996d99e3bb4395c88a91b893b925ad34e32ff1177009ec6c16a6467266414dca64ec9613e9e6bb3f91b6de0ab629d3bb3b9
+"@types/node@npm:^22.0.0":
+  version: 22.18.12
+  resolution: "@types/node@npm:22.18.12"
+  dependencies:
+    undici-types: ~6.21.0
+  checksum: f39098a09dff1df8ca4892ffcf810889b79f31f9585f7a8f27e3d047126cebc9b9fa9954b21215cc45a9793198895e81852067b019d89e03825d4f57310aa3c9
   languageName: node
   linkType: hard
 
@@ -7475,7 +7477,7 @@ __metadata:
     "@babel/core": ^7.20.2
     "@babel/plugin-transform-typescript": ^7.20.2
     "@stitches/react": ^1.2.8
-    "@types/node": ^18.11.9
+    "@types/node": ^22.0.0
     "@types/react": ^18.0.25
     babel-preset-gatsby-package: ^3.0.0
     gatsby: ^5.0.1
@@ -13098,6 +13100,13 @@ __metadata:
   version: 0.1.2
   resolution: "unc-path-regex@npm:0.1.2"
   checksum: a05fa2006bf4606051c10fc7968f08ce7b28fa646befafa282813aeb1ac1a56f65cb1b577ca7851af2726198d59475bb49b11776036257b843eaacee2860a4ec
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: 46331c7d6016bf85b3e8f20c159d62f5ae471aba1eb3dc52fff35a0259d58dcc7d592d4cc4f00c5f9243fa738a11cfa48bd20203040d4a9e6bc25e807fab7ab3
   languageName: node
   linkType: hard
 
