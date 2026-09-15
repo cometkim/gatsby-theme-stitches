@@ -37,7 +37,7 @@
     "@babel/core": "^7.20.2",
     "@babel/plugin-transform-typescript": "^7.20.2",
     "@stitches/react": "^1.2.8",
-    "@types/node": "^18.11.9",
+    "@types/node": "^22.0.0",
     "@types/react": "^18.0.25",
     "babel-preset-gatsby-package": "^3.0.0",
     "gatsby": "^5.0.1",
